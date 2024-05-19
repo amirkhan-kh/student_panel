@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img
+            style="width: 100px; height: 70px"
+            src="./images/logo.jpg"
+            alt=""
+          />
+          <ul>
+            <li><a href="allStudentPanel">O'quvchilar paneli</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <form action="" id="formStuden">
+            <label for="">Ismingizni kiriting</label>
+          <input required
+            id="inputName"
+            minlength="1"
+            maxlength="50"
+            placeholder="Your Name"
+            type="text"
+            
+          />
+          <ul id="todo-list">
+          </ul>
+          <label for="">Familiyangizni kiriting</label>
+          <input required
+            id="inputSurname"
+            minlength="1"
+            maxlength="50"
+            placeholder="Your Surname"
+            type="text"
+          />
+          <label for="">Yoshingizni kiriting</label>
+          <input style="width: 30%;" required
+            id="inputAge"
+            minlength="1"
+            maxlength="50"
+            placeholder="Age"
+            type="number"
+          />
+          <button onclick="addTodo()">Add</button>
+        </form>
+        <div class="right">
+          <div id="caruselPanel"></div>
+
+          </h2>
+        </div>
+      </div>
+      <div class="resSection">
+      <div id="section">
+        <div style="display: flex; gap: 20px;border: 1px solid black; height: 35px; width: 580px; padding: 0 10px;" class="bio">
+        <h2   id="allStudentPanel"></h2>
+        <h2   id="allSname"></h2>
+        </div>
+        <h2 style="border: 1px solid black; height: 35px;"  id="allAge"></h2>
+      </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

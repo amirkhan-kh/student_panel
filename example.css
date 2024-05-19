@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Ingrid+Darling&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Kurale&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bowlby+One+SC&family=Ingrid+Darling&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Kurale&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: "Alegreya", serif;
+    font-size: 24px;
+    
+}
+ul{
+    
+    list-style-type: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    font-family: "Alegreya", serif;
+}
+nav{
+    display: flex;
+    align-items:center;
+    gap: 350px;        
+}
+ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.wrapper{
+    font-family: "Wix Madefor Display", sans-serif;
+    background-image: url(./images/sal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vp;
+    height: 100%;
+    padding: 110px ;
+}
+form{
+    width: 20%;
+    padding:  25px;
+    width: 370px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px)
+}
+input{
+    margin-top: 20px;
+}
+input[type="number"]{
+    width: 90px;
+}
+label{
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#Update{
+    display: none;
+}
+button{
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+}
+table th{
+    padding: 5px;
+    text-align: center;
+}
+
