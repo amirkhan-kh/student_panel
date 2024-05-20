@@ -1,7 +1,9 @@
+let btn = document.querySelector("#Submit");
 function inputDateForm(){
     let name = document.querySelector("#name").value;
     let surname = document.querySelector("#surname").value;
     let age = document.querySelector("#age").value;
+    
 
     //input to'ldirilmasa qatiy so'rashlig uchun
     if(name == ""){
@@ -24,8 +26,7 @@ function inputDateForm(){
 
 }
 let res = document.querySelector("#studentTable");
-function ShowPanel(e){
-    
+function ShowPanel(){
     let peopleList;
     if(localStorage.getItem("peopleList") == null){
         panelStudentLS = [];
@@ -36,18 +37,22 @@ function ShowPanel(e){
 
     let toHtml = ``;
 
-    peopleList.forEach(element => {
-      res.innerHTML += `
-      <div class="show">
-            <h2>${element.name}</h2>
-            <span>${element.surname}</spn>
-            <span>${element.age}</span>
-        </div`
-    });
+
+
+    for (let i = 0; i < peopleList.length; i++) {
+        let element = peopleList[i];
+        res.innerHTML += `
+        <div class="show">
+            <h2>${peopleList.name}</h2>
+            <span>${peopleList.surname}</span>
+            <span>${peopleList.age}</span>
+        </div>`;
+    }
+    
     
     
 
-    document.querySelector("#studentTable tbody").innerHTML = toHtml;
+    document.querySelector("#studentTable tbody").innerHTML = peopleList;
 }
 
 ShowPanel()
@@ -78,3 +83,4 @@ function AddData(){
         document.querySelector("#age").value = "";
     }
 }
+btn.addEventListener("click", AddData)
